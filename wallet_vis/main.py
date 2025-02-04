@@ -6,8 +6,8 @@ import os
 
 import matplotlib.pyplot as plt
 
-from constants import LOGGING_CONFIG_FILE_PATH, OUTPUT_DIR_NAME
-from wallet import Wallet
+from wallet_vis.constants import LOGGING_CONFIG_FILE_PATH, OUTPUT_DIR_NAME, PIE_CHART_PATCH
+from wallet_vis.wallet import Wallet
 
 
 def setup_logging(config_path):
@@ -29,7 +29,7 @@ def main():
     plt.pie(values, labels=labels, autopct='%1.1f%%', startangle=140)
     plt.title("Financial Assets Distribution")
     plt.axis('equal')  
-    plt.savefig("output/portfolio_distribution.png")
+    plt.savefig(PIE_CHART_PATCH)
 
 
 if __name__ == "__main__":

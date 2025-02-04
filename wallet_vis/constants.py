@@ -1,4 +1,5 @@
 LOGGING_CONFIG_FILE_PATH = "static/logging_config.json"
 OUTPUT_DIR_NAME = "output"
+PIE_CHART_PATCH = "output/portfolio_distribution.png"
 SCHEMA_FILE_PATCH = "static/stocks.xsd"
-STOCK_FILE_PATCH = "stocks.xml"
+STOCK_FILE_PATCH = "data/stocks.xml"

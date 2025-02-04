@@ -4,7 +4,7 @@ import sys
 import yfinance
 
 from typing import List, Dict
-from constants import SCHEMA_FILE_PATCH, STOCK_FILE_PATCH
+from wallet_vis.constants import SCHEMA_FILE_PATCH, STOCK_FILE_PATCH
 
 
 class FinancialAsset:
@@ -44,7 +44,7 @@ class Wallet:
 
         if schema.is_valid(STOCK_FILE_PATCH):
             self.logger.info("XML validated successfully")
-            stocks_xml_as_dict = schema.to_dict('stocks.xml')
+            stocks_xml_as_dict = schema.to_dict(STOCK_FILE_PATCH)
             return stocks_xml_as_dict["Stock"]
         else:
             self.logger.error("XML does not validate")
