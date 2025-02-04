@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Stocks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../static/stocks.xsd">
+  <Stock>
+    <Ticker>AAPL</Ticker>
+    <Amount>5</Amount>
+  </Stock>
+  <Stock>
+    <Ticker>MSFT</Ticker>
+    <Amount>10</Amount>
+  </Stock>
+</Stocks>
