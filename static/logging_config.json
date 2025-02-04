@@ -17,7 +17,7 @@
       "class": "logging.FileHandler",
       "level": "DEBUG",
       "formatter": "standard",
-      "filename": "wallet_vis_debug.log",
+      "filename": "output/wallet_vis_debug.log",
       "mode": "a",
       "encoding": "utf-8"
     }

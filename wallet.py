@@ -4,10 +4,7 @@ import sys
 import yfinance
 
 from typing import List, Dict
-
-
-STOCK_FILE_PATCH = "stocks.xml"
-SCHEMA_FILE_PATCH = "static/stocks.xsd"
+from constants import SCHEMA_FILE_PATCH, STOCK_FILE_PATCH
 
 
 class FinancialAsset:
@@ -43,9 +40,9 @@ class Wallet:
                 
 
     def _read_stocks_xml(self) -> List[Dict[str, int]]:
-        schema = xmlschema.XMLSchema('static/stocks.xsd')
+        schema = xmlschema.XMLSchema(SCHEMA_FILE_PATCH)
 
-        if schema.is_valid('stocks.xml'):
+        if schema.is_valid(STOCK_FILE_PATCH):
             self.logger.info("XML validated successfully")
             stocks_xml_as_dict = schema.to_dict('stocks.xml')
             return stocks_xml_as_dict["Stock"]
