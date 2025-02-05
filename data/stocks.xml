@@ -3,10 +3,34 @@
   xsi:noNamespaceSchemaLocation="../static/stocks.xsd">
   <Stock>
     <Ticker>AAPL</Ticker>
-    <Amount>5</Amount>
+    <Amount>25</Amount>
   </Stock>
   <Stock>
     <Ticker>MSFT</Ticker>
-    <Amount>10</Amount>
+    <Amount>50</Amount>
+  </Stock>
+  <Stock>
+    <Ticker>GOOG</Ticker>
+    <Amount>30</Amount>
+  </Stock>
+  <Stock>
+    <Ticker>AMZN</Ticker>
+    <Amount>40</Amount>
+  </Stock>
+  <Stock>
+    <Ticker>TSLA</Ticker>
+    <Amount>25</Amount>
+  </Stock>
+  <Stock>
+    <Ticker>AMD</Ticker>
+    <Amount>50</Amount>
+  </Stock>
+  <Stock>
+    <Ticker>ABNB</Ticker>
+    <Amount>30</Amount>
+  </Stock>
+  <Stock>
+    <Ticker>EBAY</Ticker>
+    <Amount>40</Amount>
   </Stock>
 </Stocks>
