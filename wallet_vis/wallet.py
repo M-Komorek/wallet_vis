@@ -7,12 +7,14 @@ from wallet_vis.constants import SCHEMA_FILE_PATH, STOCK_FILE_PATH
 
 
 class FinancialAsset:
-    def __init__(self, ticker: str, amount: int, long_name: str, stock_price: float) -> None:
+    def __init__(
+        self, ticker: str, amount: int, long_name: str, stock_price: float
+    ) -> None:
         self.ticker = ticker
         self.amount = amount
         self.long_name = long_name
         self.stock_price = stock_price
-        self.value = amount*stock_price
+        self.value = amount * stock_price
 
 
 class Wallet:
@@ -44,14 +46,15 @@ class Wallet:
                     self.logger.error(f"Ask price not available for ticker {ticker}")
                     raise ValueError(f"Ask price not available for ticker {ticker}")
 
-                financial_assets.append(FinancialAsset(ticker, amount, long_name[:20], float(ask_price)))
+                financial_assets.append(
+                    FinancialAsset(ticker, amount, long_name[:20], float(ask_price))
+                )
 
             except Exception as e:
                 self.logger.exception(f"Failed to download data for {ticker}: {e}")
                 raise
 
         return financial_assets
-
 
     def _read_stocks_xml(self) -> List[Dict[str, Any]]:
         try:
@@ -80,4 +83,3 @@ class Wallet:
         except Exception as e:
             self.logger.exception(f"Error parsing XML file: {e}")
             raise
-
