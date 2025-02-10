@@ -15,7 +15,7 @@ python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
-Once configured, run the tool from the command line:
+Once configured, add your stocks to `data/stocks.xml` and run the tool from the command line:
 ``` bash
 python -m wallet_vis.main
 ```
