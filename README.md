@@ -9,13 +9,15 @@ WalletVis is a Python-based tool for visualizing wallet or portfolio data. It in
 - Lightweight Storage: Simple XML file.
 
 ## 🛠️ Usage
-- Python 3.11 or later is recomended.
+- Python 3.11 or later is recommended.
 ``` bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
+chmod +x run.sh
 ```
 Once configured, add your stocks to `data/stocks.xml` and run the tool from the command line:
+./run.sh
+
 ``` bash
-python -m wallet_vis.main
 ```
