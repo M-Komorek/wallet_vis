@@ -17,7 +17,7 @@ pip install -r requirements.txt
 chmod +x run.sh
 ```
 Once configured, add your stocks to `data/stocks.xml` and run the tool from the command line:
-./run.sh
 
 ``` bash
+./run.sh
 ```
